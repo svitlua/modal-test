@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Modal</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css"/>
+</head>
+<body>
+  <div class="app">
+    <div class="app__content">
+    <img class="app__content__logo" src="img/app__logo.png">
+    <div class="app__content__info">
+      <h2 class="app__content__info__title">Shazam App</h2>
+      <p class="app__content__info__desc">Listen in. Discover, and share your favorite music and TV. </p>
+      <button class="button" id="triggerBtn">Uninstall App</button>
+  </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal__content">
+      <span class="close-button"><img src="img/icon-popup-close.svg" alt="Warning"></span>
+      <img class="modal__content__img" src="img/icon-warning_notify-red.svg" alt="Warning"/>
+      <h1 class="modal__content__msg">Are you sure you want to uninstall the Shazam app</h1>
+      <div class="modal__content__buttons">
+        <button class="button modal_content_button" id="cancelBtn">Cancel</button>
+        <button class="button button_red modal_content_button" id="uninstallBtn">Uninstall</button>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+<script src="index.js"></script>
+</html>
