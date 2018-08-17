@@ -1,0 +1,164 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.app{
+  padding: 2rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.app__content{
+  border-radius: 0.5rem;
+  padding: 1rem 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+          box-shadow: 0 1px 3px rgba(34, 25, 25, 0.4);
+}
+
+.app__content__logo{
+  width: 80px;
+  height: 80px;
+  padding: 0.5rem 1rem;
+}
+
+.app__content__info{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.5rem 1rem;
+  width: 200px;
+}
+
+.app__content__info__title{
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.3rem 0.5rem;
+  color: #098af8;
+}
+
+.app__content__info__desc{
+  font-size: 1rem;
+  margin: 0rem 0.5rem;
+  color: black;
+}
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  -o-transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+.modal__content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1.5rem 1.5rem;
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+
+.modal__content__msg{
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+.modal__content__img{
+  width: 5rem;
+  height: 5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal__content__buttons{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.modal_content_button{
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+}
+.close-button {
+  float: left;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transform: scale(1.0);
+      -ms-transform: scale(1.0);
+          transform: scale(1.0);
+  -webkit-transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, -webkit-transform 0.25s;
+  -o-transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s, -webkit-transform 0.25s;
+}
+
+.button{
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 0.5rem 2rem;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 0.2rem;
+  border: solid #aaa 1px;
+  color: #999;
+  background-color: white;
+  margin: 1rem 0.5rem;
+}
+
+.button_red{
+  border: solid red 1px;
+  color: white;
+  background-color: red;
+}
